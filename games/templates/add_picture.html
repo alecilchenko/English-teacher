@@ -1,0 +1,8 @@
+{% load crispy_forms_tags %}
+
+    <h1>Add Picture</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <input type="submit" value="Add Word">
+    </form>

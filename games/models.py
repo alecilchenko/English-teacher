@@ -19,7 +19,7 @@ class RussianWord(models.Model):
 
 class Picture(models.Model):
     image = models.FileField(blank=True, null=True)
-    desctiption = models.TextField(blank=True, null=True)
+    description = models.TextField(blank=True, null=True)
     english_word = models.ForeignKey(EnglishWord, on_delete=models.CASCADE)
     russian_word = models.ForeignKey(RussianWord, on_delete=models.CASCADE)
 
